@@ -1,7 +1,7 @@
 About r-gghighlight
 ===================
 
-Home: https://CRAN.R-project.org/package=gghighlight
+Home: https://github.com/yutannihilation/gghighlight/
 
 Package license: MIT
 
