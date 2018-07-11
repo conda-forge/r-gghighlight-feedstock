@@ -1,7 +1,7 @@
 About r-gghighlight
 ===================
 
-Home: https://CRAN.R-project.org/package=gghighlight
+Home: https://github.com/yutannihilation/gghighlight/
 
 Package license: MIT
 
@@ -14,14 +14,16 @@ Summary: Make it easier to explore data with highlights.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-gghighlight-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-gghighlight-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-gghighlight-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-gghighlight-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-gghighlight-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-gghighlight-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-gghighlight-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-gghighlight-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-gghighlight-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-gghighlight-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-gghighlight-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-gghighlight-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-gghighlight/badges/version.svg)](https://anaconda.org/conda-forge/r-gghighlight)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-gghighlight/badges/downloads.svg)](https://anaconda.org/conda-forge/r-gghighlight)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--gghighlight-green.svg)](https://anaconda.org/conda-forge/r-gghighlight) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-gghighlight.svg)](https://anaconda.org/conda-forge/r-gghighlight) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-gghighlight.svg)](https://anaconda.org/conda-forge/r-gghighlight) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-gghighlight.svg)](https://anaconda.org/conda-forge/r-gghighlight) |
 
 Installing r-gghighlight
 ========================
