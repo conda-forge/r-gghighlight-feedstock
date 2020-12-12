@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = '0.3.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,37 +7,37 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: gghighlight_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/gghighlight_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gghighlight/gghighlight_{{ version }}.tar.gz
   sha256: b1b0a5c928df7e655aa7ca9c99bd57c9b97aef2a212c2a82079f15b88e7925f0
 
 build:
-  noarch: generic
-  merge_build_host: true  # [win]
+  merge_build_host: True  # [win]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
+    - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-dplyr >0.7.0
+    - r-dplyr >=1.0.0
     - r-ggplot2 >=3.0.0
     - r-ggrepel
-    - r-magrittr
+    - r-lifecycle
     - r-purrr
     - r-rlang
     - r-tibble
   run:
     - r-base
-    - r-dplyr >0.7.0
+    - r-dplyr >=1.0.0
     - r-ggplot2 >=3.0.0
     - r-ggrepel
-    - r-magrittr
+    - r-lifecycle
     - r-purrr
     - r-rlang
     - r-tibble
@@ -50,15 +50,37 @@ test:
 about:
   home: https://github.com/yutannihilation/gghighlight/
   license: MIT
-  license_file: LICENSE
   summary: Make it easier to explore data with highlights.
   license_family: MIT
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - LICENSE
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
+
+# Type: Package
+# Package: gghighlight
+# Title: Highlight Lines and Points in 'ggplot2'
+# Version: 0.3.1
+# Authors@R: person(given = "Hiroaki", family = "Yutani", role = c("aut", "cre"), email = "yutani.ini@gmail.com", comment = c(ORCID = "0000-0002-3385-7233"))
+# Description: Make it easier to explore data with highlights.
+# License: MIT + file LICENSE
+# URL: https://github.com/yutannihilation/gghighlight/
+# BugReports: https://github.com/yutannihilation/gghighlight/issues
+# Depends: ggplot2 (>= 3.0.0), R (>= 3.2.0)
+# Imports: dplyr (>= 1.0.0), ggrepel, lifecycle, purrr, rlang, tibble
+# Suggests: knitr, rmarkdown, sf, testthat, vdiffr (>= 0.3.0)
+# VignetteBuilder: knitr
+# RdMacros: lifecycle
+# Encoding: UTF-8
+# LazyData: true
+# RoxygenNote: 7.1.1
+# Config/testthat/edition: 3
+# NeedsCompilation: no
+# Packaged: 2020-12-12 03:18:34 UTC; yutani
+# Author: Hiroaki Yutani [aut, cre] (<https://orcid.org/0000-0002-3385-7233>)
+# Maintainer: Hiroaki Yutani <yutani.ini@gmail.com>
+# Repository: CRAN
+# Date/Publication: 2020-12-12 06:10:02 UTC
