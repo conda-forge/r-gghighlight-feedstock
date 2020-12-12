@@ -5,11 +5,9 @@ Home: https://github.com/yutannihilation/gghighlight/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gghighlight-feedstock/blob/master/LICENSE.txt)
 
 Summary: Make it easier to explore data with highlights.
-
-
 
 Current build status
 ====================
