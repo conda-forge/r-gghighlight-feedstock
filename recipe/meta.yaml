@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gghighlight_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gghighlight/gghighlight_{{ version }}.tar.gz
-  sha256: 5b543e550acb216beb1f80d2a41c9fb13c88ee29932185b98238fc9e35b1af2f
+  sha256: 018d26b23a0918e5191501997daf9ccb9680692d879e56fef017cb086cb94e47
 
 build:
   merge_build_host: true  # [win]
