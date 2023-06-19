@@ -1,11 +1,11 @@
-About r-gghighlight
-===================
+About r-gghighlight-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gghighlight-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/yutannihilation/gghighlight/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gghighlight-feedstock/blob/main/LICENSE.txt)
 
 Summary: Make it easier to explore data with highlights.
 
